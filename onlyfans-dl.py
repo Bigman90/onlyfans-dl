@@ -27,7 +27,7 @@ API_URL = "/api2/v2"
 
 #\TODO dynamically get app token
 # Note: this is not an auth token
-APP_TOKEN = "33d57ade8c02dbc5a333db99ff9ae26a"
+APP_TOKEN = "a3oamcff0tt8rs0q9p97od464v"
 
 # user info from /users/customer
 USER_INFO = {}
@@ -36,7 +36,7 @@ USER_INFO = {}
 PROFILE = ""
 # profile data from /users/<profile>
 PROFILE_INFO = {}
-PROFILE_ID = ""
+PROFILE_ID = "@blackgabbydoll"
 
 API_HEADER = {
     "Accept": "application/json, text/plain, */*",
@@ -214,7 +214,7 @@ if __name__ == "__main__":
     print("Getting user auth info... ")
 
     USER_INFO = get_user_info("me")
-    API_HEADER["user-id"] = str(USER_INFO["id"])
+    API_HEADER["Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.106 Safari/537.36"] = str(USER_INFO["id"])
 
     print("Getting target profile info...")
     PROFILE = sys.argv[1]
